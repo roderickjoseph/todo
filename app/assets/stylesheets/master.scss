@@ -1,0 +1,22 @@
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Anton');
+.logo {
+  font-family: 'Anton', sans-serif;
+  font-size: 40px;
+
+}
+.logo-text {
+  color: #4CBF41;
+}
+.navbar-text {
+  font-family: 'Anton', sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  padding-top: .425rem;
+}
+@media (max-width: 425px) {
+
+  .navbar-flavor-text {
+    display: none;
+  }
+}

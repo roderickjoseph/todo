@@ -2,13 +2,28 @@
 <html>
   <head>
     <title>Todo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <%= csrf_meta_tags %>
-
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
+    <div class="container">
+      <nav class="navbar navbar-toggleable-sm navbar-light bg-faded">
+        <div class="row">
+          <a class="navbar-brand logo-icon" href="#">
+            <%= image_tag 'clipboard64.png' %>
+          </a>
+          <a class="navbar-brand logo" href="#">
+            <span class="logo-text">R and L's</span>
+          </a>
+        </div>
+        <div class="navbar-nav">
+          <span class="navbar-text navbar-flavor-text">&nbsp;things to get done...</span>
+        </div>
+      </nav>
+    </div>
     <%= yield %>
   </body>
 </html>
