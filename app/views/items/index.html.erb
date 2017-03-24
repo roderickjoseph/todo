@@ -1,1 +1,9 @@
-<h1>This is going to be the list</h1>
+<ul>
+  <% @items.each do |item| %>
+    <li>
+      <h3><%= item.name %></h3>
+      <i><%= item.date %></i>
+      <p><%= item.description %></p>
+    </li>
+  <% end %>
+</ul>
