@@ -1,9 +1,19 @@
-<ul>
+<div class="list-group">
   <% @items.each do |item| %>
-    <li>
-      <h3><%= item.name %></h3>
-      <i><%= item.date %></i>
-      <p><%= item.description %></p>
-    </li>
+    <div class="row">
+      <%= link_to '#', class: 'list-group-item list-group-item-action' do %>
+        <div class="col-1">
+          <button type="button" class="btn btn-success">Edit</button>
+        </div>
+        <div class="col-10">
+          <h3><%= item.name %></h3>
+          <i><%= item.date %></i>
+          <p><%= item.description %></p>
+        </div>
+        <div class="col-1">
+          <button type="button" class="btn btn-danger">Delete</button>
+        </div>
+      <% end %>
+    </div>
   <% end %>
-</ul>
+</div>

@@ -1,0 +1,8 @@
+<h1>Enter new item</h1>
+<%= simple_form_for @item do |f| %>
+  <%= f.input :name %>
+  <%= f.input :description %>
+  <%= f.input :date %>
+  <br />
+  <%= f.submit 'Submit', class: 'btn btn-primary' %>
+<% end %>
