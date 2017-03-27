@@ -6,5 +6,5 @@
   <br />
   <p><%= @item.description %></p>
 </div>
-<%= link_to 'Delete', '#', class: 'col-1 btn btn-danger' %>
+<%= link_to 'Delete', item_path(@item), method: :delete, data: {confirm: 'Are you sure?'}, class: 'col-1 btn btn-danger' %>
 </div>

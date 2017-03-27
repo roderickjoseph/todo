@@ -18,7 +18,9 @@
         <div class="navbar-nav">
           <span class="navbar-text navbar-flavor-text">&nbsp;things to get done...</span>
         </div>
-        <%= link_to 'New Item', new_item_path, class: 'nav-link' %>
+        <div class="new-item-link">
+          <%= link_to 'New Item', new_item_path, class: 'nav-link' %>
+        </div>
       </nav>
 
     <%= yield %>
