@@ -2,7 +2,7 @@
   <%= link_to 'Edit', edit_item_path(@item), class: 'col-1 btn btn-success' %>
 <div class="item-box col-10">
   <h1><%= @item.name %></h1>
-  <h6><%= @item.date %></h6>
+  <h6><%= @item.date %> / <%= @item.created_by %></h6>
   <br />
   <p><%= @item.description %></p>
 </div>
